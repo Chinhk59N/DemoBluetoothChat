@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal"
+    android:weightSum="10"
+    android:layout_width="match_parent"
+    android:layout_height="65dp">
+    <ImageView
+        android:id="@+id/ivchat"
+        android:src="@drawable/avatar"
+        android:padding="10dp"
+        android:layout_weight="2.5"
+        android:layout_width="0dp"
+        android:layout_height="match_parent" />
+    <LinearLayout
+        android:orientation="vertical"
+        android:layout_width="0dp"
+        android:layout_weight="7.5"
+        android:layout_height="match_parent">
+        <RelativeLayout
+            android:layout_marginTop="15dp"
+            android:layout_weight="1"
+            android:layout_width="match_parent"
+            android:layout_height="0dp">
+            <TextView
+                android:id="@+id/tvnamechat"
+                android:textColor="@android:color/black"
+                android:textSize="15sp"
+                android:text="Name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+            <TextView
+                android:paddingRight="10dp"
+                android:id="@+id/timechat"
+                android:textSize="12sp"
+                android:layout_alignParentRight="true"
+                android:text="12:00 SA"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content" />
+        </RelativeLayout>
+        <TextView
+            android:id="@+id/tvndchat"
+            android:layout_marginBottom="15dp"
+            android:textSize="10sp"
+            android:text="Hien thi tin nhan cuoi cung"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+        <View
+            android:background="@android:color/darker_gray"
+            android:layout_width="match_parent"
+            android:layout_height="1dp"/>
+    </LinearLayout>
+
+</LinearLayout>

@@ -1,0 +1,44 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <RelativeLayout
+        android:id="@+id/addfriend"
+        android:layout_width="match_parent"
+        android:layout_height="50dp">
+        <ImageView
+            android:id="@+id/ivfriend"
+            android:src="@drawable/rings"
+            android:padding="8dp"
+            android:layout_width="60dp"
+            android:layout_height="wrap_content" />
+        <TextView
+            android:layout_toRightOf="@+id/ivfriend"
+            android:id="@+id/tvnamefriend"
+            android:gravity="center_vertical"
+            android:textColor="@android:color/black"
+            android:text="   Gợi ý kết bạn "
+            android:textSize="14sp"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent" />
+        <ImageView
+            android:padding="14dp"
+            android:layout_alignParentRight="true"
+            android:src="@drawable/nextms"
+            android:layout_width="50dp"
+            android:layout_height="match_parent" />
+    </RelativeLayout>
+    <TextView
+        android:layout_below="@+id/addfriend"
+        android:background="@android:color/darker_gray"
+        android:layout_width="match_parent"
+        android:layout_height="1dp"/>
+    <android.support.v7.widget.RecyclerView
+        android:id="@+id/rvfriend"
+        android:layout_below="@+id/addfriend"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+    </android.support.v7.widget.RecyclerView>
+
+</RelativeLayout>
